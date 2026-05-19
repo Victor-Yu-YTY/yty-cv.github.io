@@ -184,7 +184,7 @@ tailwind.config = {
 
       <p class="text-base sm:text-lg max-w-xl mx-auto leading-relaxed animate-fade-in delay-400" style="color: #8ba3c4;">
         上海对外经贸大学 · 数据科学与大数据技术 · 大三<br/>
-        <span style="color: rgba(96,165,250,0.8);">期望岗位：实习生</span>
+
       </p>
 
       <div class="flex justify-center gap-3 mt-8 animate-fade-in-up delay-600">
@@ -251,7 +251,7 @@ tailwind.config = {
                 </div>
                 <div class="flex items-center gap-2" style="color: #8ba3c4;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
-                  <span>大三 · 实习生</span>
+                  <span>大三</span>
                 </div>
                 <div class="flex items-center gap-2" style="color: #8ba3c4;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
@@ -819,6 +819,47 @@ tailwind.config = {
         </div>
       </div>
 
+      <!-- MapReduce Project -->
+      <div class="reveal mt-10">
+        <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-bold flex items-center gap-2" style="color: #e8edf5;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                  分布式 MapReduce 框架搭建
+                  <span class="text-sm font-normal" style="color: #8ba3c4;">（MIT 公开课程项目）</span>
+                </h3>
+                <p class="text-sm mt-1" style="color: #8ba3c4;">2026.04 - 2026.05</p>
+              </div>
+              <span class="badge text-xs w-fit" style="background: rgba(59,130,246,0.1); color: #60a5fa; border-color: rgba(59,130,246,0.2);">Go · 分布式计算</span>
+            </div>
+          </div>
+          <div class="px-6 space-y-5">
+            <div>
+              <h4 class="text-sm font-semibold mb-2" style="color: rgba(232,237,245,0.9);">项目目标</h4>
+              <p class="text-sm leading-relaxed" style="color: #8ba3c4;">
+                实现一套轻量级分布式计算框架，能够将大规模数据处理任务自动拆分、分布式执行、汇总结果，提升大数据处理效率，同时掌握分布式系统的任务调度、节点协作与容错机制。
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-2" style="color: rgba(232,237,245,0.9);">项目背景</h4>
+              <p class="text-sm leading-relaxed" style="color: #8ba3c4;">
+                为解决单机算力不足、处理效率低的问题，本项目基于分布式计算思想，实现一套可自动拆分任务、多节点并行执行的 MapReduce 框架。系统能够自动调度任务、处理节点异常、保证计算稳定完成，适用于单词统计、日志分析、索引构建等常见大数据处理需求。
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-2" style="color: rgba(232,237,245,0.9);">核心工作</h4>
+              <div class="grid gap-2">
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">1</span><span class="text-sm" style="color: #8ba3c4;">Coordinator 调度模块：实现任务分配、状态管理与超时容错，保证分布式任务有序、稳定执行</span></div>
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">2</span><span class="text-sm" style="color: #8ba3c4;">RPC 通信模块：定义节点通信协议，实现协调器与工作节点的稳定远程交互</span></div>
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">3</span><span class="text-sm" style="color: #8ba3c4;">Worker 执行引擎：完成 Map/Reduce 计算、数据分片与结果输出，保障业务逻辑正确执行</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Student Org & Volunteer -->
       <div class="mt-10 grid md:grid-cols-2 gap-6 reveal">
         <!-- Student Org -->
@@ -966,7 +1007,7 @@ tailwind.config = {
           </div>
         </a>
         <!-- Website -->
-        <a href="https://yty-cv.com" target="_blank" rel="noopener noreferrer" class="block">
+        <a href="https://victor-yu-yty.github.io/yty-cv.github.io/" target="_blank" rel="noopener noreferrer" class="block">
           <div class="p-4 rounded-xl border transition-all duration-300 group cursor-pointer" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-lg flex items-center justify-center transition-colors" style="background: rgba(59,130,246,0.1);">
