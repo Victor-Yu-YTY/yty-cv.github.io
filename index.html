@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>俞天跃 | 个人简历</title>
+<meta name="description" content="俞天跃的个人简历网站 - 数据科学与大数据技术专业，擅长Power BI数据分析、RPA开发、MySQL数据库管理。"/>
+<meta name="author" content="俞天跃"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-navy': '#0a1628',
+        'navy-800': '#0f1d32',
+        'navy-700': '#1a2942',
+        'navy-600': '#1e3a5f',
+        'navy-500': '#244876',
+        'blue-accent': '#3b82f6',
+        'blue-light': '#60a5fa',
+        'blue-glow': '#2563eb',
+        'background': '#0a1628',
+        'foreground': '#e8edf5',
+        'card': '#0f1d32',
+        'card-foreground': '#e8edf5',
+        'primary': '#3b82f6',
+        'primary-foreground': '#ffffff',
+        'secondary': '#1a2942',
+        'secondary-foreground': '#c5d3e8',
+        'muted': '#1a2942',
+        'muted-foreground': '#8ba3c4',
+        'accent': '#1a2942',
+        'accent-foreground': '#c5d3e8',
+        'border-color': '#1e3a5f',
+        'input': '#1e3a5f',
+        'ring': '#3b82f6',
+      }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #0a1628; color: #e8edf5; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0a1628; }
+  ::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+
+  /* Selection color */
+  ::selection { background-color: rgba(59, 130, 246, 0.3); color: #ffffff; }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-80px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes bounceDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+
+  .animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+  .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+  .animate-slide-down { animation: slideDown 0.5s ease-out forwards; }
+  .animate-bounce-down { animation: bounceDown 1.5s ease-in-out infinite; }
+
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+  .delay-600 { animation-delay: 0.6s; }
+  .delay-700 { animation-delay: 0.7s; }
+  .delay-800 { animation-delay: 0.8s; }
+
+  /* Scroll-triggered animation */
+  .reveal { opacity: 0; transform: translateY(40px); transition: all 0.6s ease-out; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* Progress bar animation */
+  .progress-bar { transition: width 1s ease-out; }
+
+  /* Badge style */
+  .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 0.375rem; border: 1px solid;
+    font-weight: 500; white-space: nowrap; flex-shrink: 0;
+    padding: 0.375rem 1rem; font-size: 0.875rem;
+    transition: color 0.15s, box-shadow 0.15s;
+  }
+
+  /* Card style */
+  .card {
+    display: flex; flex-direction: column; gap: 1.5rem;
+    border-radius: 0.75rem; border: 1px solid;
+    padding: 1.5rem 0; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    transition: border-color 0.3s;
+  }
+
+  /* Custom scrollbar for overflow areas */
+  .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 2px; }
+
+  /* Mobile menu */
+  .mobile-menu { display: none; }
+  .mobile-menu.open { display: flex; }
+</style>
+</head>
+
+<body class="antialiased">
+
+<div class="min-h-screen flex flex-col" style="background: #0a1628;">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b animate-slide-down" style="background: rgba(10,22,40,0.8); border-color: rgba(26,41,66,0.5);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-lg font-bold tracking-wide hover:text-blue-light transition-colors" style="color: #3b82f6;">YTY</a>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="#about" class="px-3 py-2 text-sm hover:text-blue-accent transition-colors rounded-md hover:bg-navy-700/50" style="color: #8ba3c4;">关于我</a>
+        <a href="#education" class="px-3 py-2 text-sm hover:text-blue-accent transition-colors rounded-md hover:bg-navy-700/50" style="color: #8ba3c4;">教育背景</a>
+        <a href="#skills" class="px-3 py-2 text-sm hover:text-blue-accent transition-colors rounded-md hover:bg-navy-700/50" style="color: #8ba3c4;">专业技能</a>
+        <a href="#certificates" class="px-3 py-2 text-sm hover:text-blue-accent transition-colors rounded-md hover:bg-navy-700/50" style="color: #8ba3c4;">专业证书</a>
+        <a href="#internship" class="px-3 py-2 text-sm hover:text-blue-accent transition-colors rounded-md hover:bg-navy-700/50" style="color: #8ba3c4;">实习经历</a>
+        <a href="#projects" class="px-3 py-2 text-sm hover:text-blue-accent transition-colors rounded-md hover:bg-navy-700/50" style="color: #8ba3c4;">项目经历</a>
+        <a href="#contact" class="px-3 py-2 text-sm hover:text-blue-accent transition-colors rounded-md hover:bg-navy-700/50" style="color: #8ba3c4;">联系方式</a>
+      </div>
+      <button id="menuBtn" class="md:hidden p-2 hover:text-blue-accent transition-colors" style="color: #8ba3c4;" aria-label="打开菜单">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobileMenu" class="mobile-menu fixed inset-0 z-[60] flex-col items-center justify-center h-full gap-6" style="background: rgba(10,22,40,0.95); backdrop-filter: blur(16px);">
+    <button id="closeMenuBtn" class="absolute top-5 right-5 p-2 hover:text-blue-accent" style="color: #8ba3c4;" aria-label="关闭菜单">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <a href="#about" class="text-xl font-medium hover:text-blue-accent transition-colors mobile-link" style="color: #e8edf5;">关于我</a>
+    <a href="#education" class="text-xl font-medium hover:text-blue-accent transition-colors mobile-link" style="color: #e8edf5;">教育背景</a>
+    <a href="#skills" class="text-xl font-medium hover:text-blue-accent transition-colors mobile-link" style="color: #e8edf5;">专业技能</a>
+    <a href="#certificates" class="text-xl font-medium hover:text-blue-accent transition-colors mobile-link" style="color: #e8edf5;">专业证书</a>
+    <a href="#internship" class="text-xl font-medium hover:text-blue-accent transition-colors mobile-link" style="color: #e8edf5;">实习经历</a>
+    <a href="#projects" class="text-xl font-medium hover:text-blue-accent transition-colors mobile-link" style="color: #e8edf5;">项目经历</a>
+    <a href="#contact" class="text-xl font-medium hover:text-blue-accent transition-colors mobile-link" style="color: #e8edf5;">联系方式</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-16">
+    <div class="absolute inset-0 bg-gradient-to-br from-deep-navy via-navy-800 to-navy-700"></div>
+    <div class="absolute top-1/4 -left-32 w-96 h-96 rounded-full blur-3xl" style="background: rgba(59,130,246,0.05);"></div>
+    <div class="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full blur-3xl" style="background: rgba(37,99,235,0.05);"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[120px]" style="background: rgba(59,130,246,0.03);"></div>
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(59,130,246,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.3) 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+    <div class="relative z-10 text-center max-w-3xl mx-auto">
+      <!-- Avatar -->
+      <div class="mx-auto mb-8 w-28 h-28 rounded-full overflow-hidden shadow-lg border-2 animate-fade-in" style="border-color: rgba(59,130,246,0.3); box-shadow: 0 10px 15px -3px rgba(59,130,246,0.2);">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUEBAQEAwUEBAQGBQUGCA0ICAcHCBALDAkNExAUExIQEhIUFx0ZFBYcFhISGiMaHB4fISEhFBkkJyQgJh0gISD/2wBDAQUGBggHCA8ICA8gFRIVICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICD/wAARCAFiARADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7LooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACim0UAOooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooozQAUV518QfjJ4J+HKNBrGoG41MpvTT7YbpSOxbso+v4A18s+Mf2rvHerSvF4dhtfD1ochWVRNOR2+ZuB+AoHY+5prm3t13TzJEvq7BR+tVl1fSmieVdStWjQZZhMuFHuc1+WGr+KvEXiG9kuta12+vZHOS0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" alt="俞天跃" class="w-full h-full object-cover"/>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight animate-fade-in-up" style="color: #e8edf5;">俞天跃</h1>
+
+      <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 animate-fade-in-up delay-200">
+        <span class="badge" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">数据分析师</span>
+        <span class="badge" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">Power BI</span>
+        <span class="badge" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">Python</span>
+        <span class="badge" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">MySQL</span>
+        <span class="badge" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">RPA 工程师</span>
+      </div>
+
+      <p class="text-base sm:text-lg max-w-xl mx-auto leading-relaxed animate-fade-in delay-400" style="color: #8ba3c4;">
+        上海对外经贸大学 · 数据科学与大数据技术 · 大三<br/>
+        <span style="color: rgba(96,165,250,0.8);">期望岗位：实习生</span>
+      </p>
+
+      <div class="flex justify-center gap-3 mt-8 animate-fade-in-up delay-600">
+        <a href="#about" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 shadow-lg" style="background: #3b82f6; color: white; box-shadow: 0 10px 15px -3px rgba(59,130,246,0.25);">
+          了解更多
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 border" style="border-color: #1e3a5f; color: #e8edf5; background: rgba(26,41,66,0.3);">
+          联系我
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in delay-800">
+        <div class="w-6 h-10 border-2 rounded-full flex justify-center animate-bounce-down" style="border-color: rgba(59,130,246,0.3);">
+          <div class="w-1.5 h-3 rounded-full mt-2" style="background: rgba(59,130,246,0.5);"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">关于我</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <div class="reveal">
+        <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5); backdrop-filter: blur(8px);">
+          <div class="px-6 pt-0">
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="md:col-span-2">
+                <p class="leading-relaxed text-base" style="color: rgba(232,237,245,0.9);">
+                  一名对数据科学充满热情的学生，在数据分析、可视化和自动化方面拥有扎实技能。
+                  熟练掌握 Power BI、SQL、RPA 开发，并具备真实商业数据项目经验。
+                  积极参与学生组织和社区志愿服务，具备出色的沟通协调能力和团队合作精神。
+                </p>
+                <div class="flex flex-wrap gap-2 mt-5">
+                  <span class="inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-medium" style="background: rgba(59,130,246,0.1); color: #60a5fa; border-color: rgba(59,130,246,0.2);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+                    数据分析
+                  </span>
+                  <span class="inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-medium" style="background: rgba(59,130,246,0.1); color: #60a5fa; border-color: rgba(59,130,246,0.2);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                    数据可视化
+                  </span>
+                  <span class="inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-medium" style="background: rgba(59,130,246,0.1); color: #60a5fa; border-color: rgba(59,130,246,0.2);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                    流程自动化
+                  </span>
+                  <span class="inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-medium" style="background: rgba(59,130,246,0.1); color: #60a5fa; border-color: rgba(59,130,246,0.2);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                    数据库管理
+                  </span>
+                </div>
+              </div>
+              <div class="space-y-3 text-sm">
+                <div class="flex items-center gap-2" style="color: #8ba3c4;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+                  <span>21岁 · 男</span>
+                </div>
+                <div class="flex items-center gap-2" style="color: #8ba3c4;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                  <span>大三 · 实习生</span>
+                </div>
+                <div class="flex items-center gap-2" style="color: #8ba3c4;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>上海</span>
+                </div>
+                <div class="flex items-center gap-2" style="color: #8ba3c4;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+                  <span>CSDN: leo_yu_yty</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-px max-w-5xl mx-auto" style="background: rgba(26,41,66,0.4);"></div>
+
+  <!-- Education Section -->
+  <section id="education" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">教育背景</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <div class="reveal">
+        <div class="relative pl-8 border-l-2" style="border-color: rgba(59,130,246,0.3);">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full shadow-md" style="background: #3b82f6; box-shadow: 0 4px 6px -1px rgba(59,130,246,0.3);"></div>
+          <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+            <div class="px-6 pt-0">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+                <h3 class="text-xl font-bold" style="color: #e8edf5;">上海对外经贸大学</h3>
+                <span class="badge text-xs w-fit" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">2023.09 - 2027.06</span>
+              </div>
+              <p class="font-medium" style="color: rgba(232,237,245,0.8);">数据科学与大数据技术 · 本科</p>
+              <p class="text-sm mt-1" style="color: #8ba3c4;">统计与信息学院</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-px max-w-5xl mx-auto" style="background: rgba(26,41,66,0.4);"></div>
+
+  <!-- Core Courses Section -->
+  <section id="courses" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">主修专业课程</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <div class="flex flex-wrap gap-3 reveal">
+        <div class="px-5 py-3 rounded-xl border hover:shadow-lg transition-all duration-300 group cursor-default" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full group-hover:bg-blue-accent transition-colors" style="background: rgba(59,130,246,0.6);"></div><span class="text-sm font-medium group-hover:text-blue-light transition-colors" style="color: rgba(232,237,245,0.9);">机器学习</span></div>
+        </div>
+        <div class="px-5 py-3 rounded-xl border hover:shadow-lg transition-all duration-300 group cursor-default" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full group-hover:bg-blue-accent transition-colors" style="background: rgba(59,130,246,0.6);"></div><span class="text-sm font-medium group-hover:text-blue-light transition-colors" style="color: rgba(232,237,245,0.9);">深度学习</span></div>
+        </div>
+        <div class="px-5 py-3 rounded-xl border hover:shadow-lg transition-all duration-300 group cursor-default" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full group-hover:bg-blue-accent transition-colors" style="background: rgba(59,130,246,0.6);"></div><span class="text-sm font-medium group-hover:text-blue-light transition-colors" style="color: rgba(232,237,245,0.9);">强化学习</span></div>
+        </div>
+        <div class="px-5 py-3 rounded-xl border hover:shadow-lg transition-all duration-300 group cursor-default" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full group-hover:bg-blue-accent transition-colors" style="background: rgba(59,130,246,0.6);"></div><span class="text-sm font-medium group-hover:text-blue-light transition-colors" style="color: rgba(232,237,245,0.9);">计量经济学</span></div>
+        </div>
+        <div class="px-5 py-3 rounded-xl border hover:shadow-lg transition-all duration-300 group cursor-default" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full group-hover:bg-blue-accent transition-colors" style="background: rgba(59,130,246,0.6);"></div><span class="text-sm font-medium group-hover:text-blue-light transition-colors" style="color: rgba(232,237,245,0.9);">数据可视化</span></div>
+        </div>
+        <div class="px-5 py-3 rounded-xl border hover:shadow-lg transition-all duration-300 group cursor-default" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full group-hover:bg-blue-accent transition-colors" style="background: rgba(59,130,246,0.6);"></div><span class="text-sm font-medium group-hover:text-blue-light transition-colors" style="color: rgba(232,237,245,0.9);">大数据探索性分析</span></div>
+        </div>
+        <div class="px-5 py-3 rounded-xl border hover:shadow-lg transition-all duration-300 group cursor-default" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full group-hover:bg-blue-accent transition-colors" style="background: rgba(59,130,246,0.6);"></div><span class="text-sm font-medium group-hover:text-blue-light transition-colors" style="color: rgba(232,237,245,0.9);">数据库原理</span></div>
+        </div>
+        <div class="px-5 py-3 rounded-xl border hover:shadow-lg transition-all duration-300 group cursor-default" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full group-hover:bg-blue-accent transition-colors" style="background: rgba(59,130,246,0.6);"></div><span class="text-sm font-medium group-hover:text-blue-light transition-colors" style="color: rgba(232,237,245,0.9);">分布式计算</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-px max-w-5xl mx-auto" style="background: rgba(26,41,66,0.4);"></div>
+
+  <!-- Awards Section -->
+  <section id="awards" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">荣誉奖项</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-3 reveal">
+        <div class="flex items-start gap-3 p-3 rounded-lg border transition-all group" style="background: rgba(15,29,50,0.4); border-color: rgba(26,41,66,0.3);">
+          <div class="mt-0.5 w-8 h-8 rounded-md flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+          </div>
+          <span class="text-sm leading-relaxed" style="color: rgba(232,237,245,0.8);">校二等奖学金</span>
+        </div>
+        <div class="flex items-start gap-3 p-3 rounded-lg border transition-all group" style="background: rgba(15,29,50,0.4); border-color: rgba(26,41,66,0.3);">
+          <div class="mt-0.5 w-8 h-8 rounded-md flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+          </div>
+          <span class="text-sm leading-relaxed" style="color: rgba(232,237,245,0.8);">校三等奖学金</span>
+        </div>
+        <div class="flex items-start gap-3 p-3 rounded-lg border transition-all group" style="background: rgba(15,29,50,0.4); border-color: rgba(26,41,66,0.3);">
+          <div class="mt-0.5 w-8 h-8 rounded-md flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+          </div>
+          <span class="text-sm leading-relaxed" style="color: rgba(232,237,245,0.8);">美国大学生数学建模竞赛 S 奖（建模和编程）</span>
+        </div>
+        <div class="flex items-start gap-3 p-3 rounded-lg border transition-all group" style="background: rgba(15,29,50,0.4); border-color: rgba(26,41,66,0.3);">
+          <div class="mt-0.5 w-8 h-8 rounded-md flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+          </div>
+          <span class="text-sm leading-relaxed" style="color: rgba(232,237,245,0.8);">全国大学生英语竞赛三等奖</span>
+        </div>
+        <div class="flex items-start gap-3 p-3 rounded-lg border transition-all group" style="background: rgba(15,29,50,0.4); border-color: rgba(26,41,66,0.3);">
+          <div class="mt-0.5 w-8 h-8 rounded-md flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+          </div>
+          <span class="text-sm leading-relaxed" style="color: rgba(232,237,245,0.8);">正大杯第十五届市场调研与分析大赛校赛三等奖</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-px max-w-5xl mx-auto" style="background: rgba(26,41,66,0.4);"></div>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">专业技能</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4 reveal">
+        <!-- Power BI -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              <span class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">Power BI</span>
+            </div>
+            <span class="text-xs font-mono" style="color: #60a5fa;">92%</span>
+          </div>
+          <div class="relative w-full overflow-hidden rounded-full h-2" style="background: rgba(26,41,66,0.5);">
+            <div class="h-full rounded-full progress-bar" style="width: 92%; background: linear-gradient(to right, #2563eb, #60a5fa);"></div>
+          </div>
+        </div>
+        <!-- MySQL -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              <span class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">MySQL / SQL</span>
+            </div>
+            <span class="text-xs font-mono" style="color: #60a5fa;">88%</span>
+          </div>
+          <div class="relative w-full overflow-hidden rounded-full h-2" style="background: rgba(26,41,66,0.5);">
+            <div class="h-full rounded-full progress-bar" style="width: 88%; background: linear-gradient(to right, #2563eb, #60a5fa);"></div>
+          </div>
+        </div>
+        <!-- Python -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              <span class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">Python</span>
+            </div>
+            <span class="text-xs font-mono" style="color: #60a5fa;">85%</span>
+          </div>
+          <div class="relative w-full overflow-hidden rounded-full h-2" style="background: rgba(26,41,66,0.5);">
+            <div class="h-full rounded-full progress-bar" style="width: 85%; background: linear-gradient(to right, #2563eb, #60a5fa);"></div>
+          </div>
+        </div>
+        <!-- Uipath RPA -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+              <span class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">Uipath RPA</span>
+            </div>
+            <span class="text-xs font-mono" style="color: #60a5fa;">80%</span>
+          </div>
+          <div class="relative w-full overflow-hidden rounded-full h-2" style="background: rgba(26,41,66,0.5);">
+            <div class="h-full rounded-full progress-bar" style="width: 80%; background: linear-gradient(to right, #2563eb, #60a5fa);"></div>
+          </div>
+        </div>
+        <!-- Tableau -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              <span class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">Tableau</span>
+            </div>
+            <span class="text-xs font-mono" style="color: #60a5fa;">75%</span>
+          </div>
+          <div class="relative w-full overflow-hidden rounded-full h-2" style="background: rgba(26,41,66,0.5);">
+            <div class="h-full rounded-full progress-bar" style="width: 75%; background: linear-gradient(to right, #2563eb, #60a5fa);"></div>
+          </div>
+        </div>
+        <!-- Data Analysis -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              <span class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">数据分析</span>
+            </div>
+            <span class="text-xs font-mono" style="color: #60a5fa;">90%</span>
+          </div>
+          <div class="relative w-full overflow-hidden rounded-full h-2" style="background: rgba(26,41,66,0.5);">
+            <div class="h-full rounded-full progress-bar" style="width: 90%; background: linear-gradient(to right, #2563eb, #60a5fa);"></div>
+          </div>
+        </div>
+        <!-- Data Visualization -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              <span class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">数据可视化</span>
+            </div>
+            <span class="text-xs font-mono" style="color: #60a5fa;">92%</span>
+          </div>
+          <div class="relative w-full overflow-hidden rounded-full h-2" style="background: rgba(26,41,66,0.5);">
+            <div class="h-full rounded-full progress-bar" style="width: 92%; background: linear-gradient(to right, #2563eb, #60a5fa);"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Skills -->
+      <div class="mt-8 reveal">
+        <h3 class="text-base font-semibold mb-3 flex items-center gap-2" style="color: #e8edf5;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+          其他技能
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge text-xs" style="border-color: #1e3a5f; color: #8ba3c4;">Office 办公套件</span>
+          <span class="badge text-xs" style="border-color: #1e3a5f; color: #8ba3c4;">视频剪辑基础</span>
+          <span class="badge text-xs" style="border-color: #1e3a5f; color: #8ba3c4;">微信公众号运营</span>
+          <span class="badge text-xs" style="border-color: #1e3a5f; color: #8ba3c4;">驾驶证</span>
+        </div>
+      </div>
+
+      <!-- LeetCode -->
+      <div class="mt-6 reveal">
+        <div class="p-4 rounded-xl border" style="background: rgba(15,29,50,0.4); border-color: rgba(26,41,66,0.3);">
+          <div class="flex items-center gap-2 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+            <span class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">LeetCode 刷题</span>
+          </div>
+          <div class="flex gap-6">
+            <div><span class="text-2xl font-bold" style="color: #60a5fa;">300+</span><span class="text-xs ml-1" style="color: #8ba3c4;">Python</span></div>
+            <div><span class="text-2xl font-bold" style="color: #60a5fa;">100+</span><span class="text-xs ml-1" style="color: #8ba3c4;">SQL</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-px max-w-5xl mx-auto" style="background: rgba(26,41,66,0.4);"></div>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">专业证书</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 reveal">
+        <!-- PL-300 -->
+        <div class="card h-full group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <div class="flex items-start gap-3 text-base font-semibold mb-2" style="color: #e8edf5;">
+              <div class="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              </div>
+              <span class="leading-snug">Microsoft Power BI Data Analyst (PL-300)</span>
+            </div>
+          </div>
+          <div class="px-6">
+            <ul class="space-y-1.5">
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>Power BI Desktop/Service 交互式可视化仪表板</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>Power Query 数据清洗与多表合并</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>自动化报表更新、RLS 权限分配、告警设置</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>SVG 报表美化与自定义可视化设计</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>具备真实公司项目经验</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- UiADAV1 -->
+        <div class="card h-full group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <div class="flex items-start gap-3 text-base font-semibold mb-2" style="color: #e8edf5;">
+              <div class="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+              </div>
+              <span class="leading-snug">Uipath UiADAV1: Automation Developer Associate</span>
+            </div>
+          </div>
+          <div class="px-6">
+            <ul class="space-y-1.5">
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>Uipath Studio RPA 解决方案开发</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>Web/桌面端 UI 自动化</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>结构化网页数据采集</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>业务流程自动化</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- OCP MySQL -->
+        <div class="card h-full group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <div class="flex items-start gap-3 text-base font-semibold mb-2" style="color: #e8edf5;">
+              <div class="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              </div>
+              <span class="leading-snug">Oracle OCP MySQL 8.0 DBA (1z0-908)</span>
+            </div>
+          </div>
+          <div class="px-6">
+            <ul class="space-y-1.5">
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>MySQL 8.0 安装配置与用户权限管理</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>备份恢复 (mysqlpump, mysqldump)</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>性能优化 (索引、查询调优)、主从复制</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>存储过程、视图、复杂查询、窗口函数</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- CET-6 -->
+        <div class="card h-full group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <div class="flex items-start gap-3 text-base font-semibold mb-2" style="color: #e8edf5;">
+              <div class="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <span class="leading-snug">CET-6 (585分)</span>
+            </div>
+          </div>
+          <div class="px-6">
+            <ul class="space-y-1.5">
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>英语六级 585 分</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>具备良好的英文技术文档阅读能力</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- IELTS -->
+        <div class="card h-full group md:col-span-2" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <div class="flex items-start gap-3 text-base font-semibold mb-2" style="color: #e8edf5;">
+              <div class="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <span class="leading-snug">雅思 IELTS (7.5分)</span>
+            </div>
+          </div>
+          <div class="px-6">
+            <ul class="space-y-1.5">
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>总分 7.5，听力 8.0，阅读 8.5，写作 6.5，口语 6.0</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1.5 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>具备良好的英语沟通能力</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-px max-w-5xl mx-auto" style="background: rgba(26,41,66,0.4);"></div>
+
+  <!-- Internship Section -->
+  <section id="internship" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">实习经历</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <div class="reveal">
+        <div class="relative pl-8 border-l-2 space-y-8" style="border-color: rgba(59,130,246,0.3);">
+          <!-- 第一段实习：上海恩德风力发电有限公司 -->
+          <div class="relative">
+            <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full shadow-md" style="background: #3b82f6; box-shadow: 0 4px 6px -1px rgba(59,130,246,0.3);"></div>
+            <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+              <div class="px-6 pt-0">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
+                  <div>
+                    <h3 class="text-lg font-bold flex items-center gap-2" style="color: #e8edf5;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+                      上海恩德风力发电有限公司
+                    </h3>
+                    <p class="mt-1" style="color: rgba(232,237,245,0.8);">管理办公室 · 数据分析实习生</p>
+                  </div>
+                  <span class="badge text-xs w-fit" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">2025.06 - 2025.10</span>
+                </div>
+                <p class="text-sm leading-relaxed" style="color: #8ba3c4;">
+                  负责公司部门数据和业务数据的 Power Query 预处理、数据清洗、数据可视化仪表板设计与制作、自动化仪表板更新及用户权限分配。
+                </p>
+                <div class="mt-4 space-y-3">
+                  <div class="p-3 rounded-lg border" style="background: rgba(26,41,66,0.3); border-color: rgba(26,41,66,0.2);">
+                    <p class="text-sm font-medium mb-1" style="color: rgba(232,237,245,0.9);">公司部门数据</p>
+                    <p class="text-xs leading-relaxed" style="color: #8ba3c4;">
+                      处理部门、项目、访客、客户和工厂数据，通过预处理后使用 Power BI 交互式仪表板呈现，采用甘特图、热力图、地图及自定义视觉对象，涉及 DAX 函数和 SVG 代码。
+                    </p>
+                  </div>
+                  <div class="p-3 rounded-lg border" style="background: rgba(26,41,66,0.3); border-color: rgba(26,41,66,0.2);">
+                    <p class="text-sm font-medium mb-1" style="color: rgba(232,237,245,0.9);">公司业务数据</p>
+                    <p class="text-xs leading-relaxed" style="color: #8ba3c4;">
+                      推进"TN 管理与风险分析"项目。负责 TN 数据清洗和预处理（数万条记录），独立设计和制作数据报表，自动化仪表板更新、风险数据自动告警、数据模型速度优化、数据维护及 RLS 用户权限控制。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第二段实习：众华会计师事务所 -->
+          <div class="relative">
+            <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full shadow-md" style="background: #3b82f6; box-shadow: 0 4px 6px -1px rgba(59,130,246,0.3);"></div>
+            <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+              <div class="px-6 pt-0">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
+                  <div>
+                    <h3 class="text-lg font-bold flex items-center gap-2" style="color: #e8edf5;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+                      众华会计师事务所
+                    </h3>
+                    <p class="mt-1" style="color: rgba(232,237,245,0.8);">审计数据分析师助理</p>
+                  </div>
+                  <span class="badge text-xs w-fit" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">2025.01 - 2025.05</span>
+                </div>
+                <p class="text-sm leading-relaxed" style="color: #8ba3c4;">
+                  担任日常审计数据分析师助理，数据采集，数据清洗，同时负责日常报表制作；帮助公司实现 Power Automate 简单日常自动化流程，提高工作效率。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第三段实习：上海屹恒信息科技有限公司 -->
+          <div class="relative">
+            <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full shadow-md" style="background: #3b82f6; box-shadow: 0 4px 6px -1px rgba(59,130,246,0.3);"></div>
+            <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+              <div class="px-6 pt-0">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
+                  <div>
+                    <h3 class="text-lg font-bold flex items-center gap-2" style="color: #e8edf5;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+                      上海屹恒信息科技有限公司
+                    </h3>
+                    <p class="mt-1" style="color: rgba(232,237,245,0.8);">数据库运维工程师</p>
+                  </div>
+                  <span class="badge text-xs w-fit" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">2024.07 - 2024.09</span>
+                </div>
+                <p class="text-sm leading-relaxed" style="color: #8ba3c4;">
+                  负责日常公司 MySQL 数据库运维；维护和增强现有 RPA 解决方案，从而提高日常工作效率；监控机器人状态，协助排除故障并诊断运行时自动化问题。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-px max-w-5xl mx-auto" style="background: rgba(26,41,66,0.4);"></div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">项目经历</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <!-- TN Project -->
+      <div class="reveal">
+        <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-bold flex items-center gap-2" style="color: #e8edf5;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                  TN 管理与风险分析
+                  <span class="text-sm font-normal" style="color: #8ba3c4;">（公司实战项目-数据分析与Power BI可视化）</span>
+                </h3>
+                <p class="text-sm mt-1" style="color: #8ba3c4;">2025.07 - 2025.10</p>
+              </div>
+              <span class="badge text-xs w-fit" style="background: rgba(59,130,246,0.1); color: #60a5fa; border-color: rgba(59,130,246,0.2);">Power BI · SQL · DAX</span>
+            </div>
+          </div>
+          <div class="px-6 space-y-5">
+            <div>
+              <h4 class="text-sm font-semibold mb-2" style="color: rgba(232,237,245,0.9);">项目目标</h4>
+              <p class="text-sm leading-relaxed" style="color: #8ba3c4;">
+                通过对 TN（风力发电机）数据的统计分析、可视化监控和风险评估，提升数据处理效率和准确性，加强风险管理能力，为管理决策提供实时、多维度的数据支持。
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-2" style="color: rgba(232,237,245,0.9);">项目背景</h4>
+              <p class="text-sm leading-relaxed" style="color: #8ba3c4;">
+                分析发送至港口和工厂的 TN 数据，包括：国内外 TN 执行任务及地点的分布；问题 TN 数据的分类和根因分析；受影响项目进度的风险评估（低/中/高）；TN 处理时间周期计算及自动化更新与告警；以及 Power BI 可视化监控月度、季度和年度 TN 执行率。
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-2" style="color: rgba(232,237,245,0.9);">负责内容</h4>
+              <div class="grid gap-2">
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">1</span><span class="text-sm" style="color: #8ba3c4;">参与数据需求分析，标准化数据采集并整合至中心数据源</span></div>
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">2</span><span class="text-sm" style="color: #8ba3c4;">Power Query 数据清洗和预处理整合数据</span></div>
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">3</span><span class="text-sm" style="color: #8ba3c4;">不同数据源的多表关联，建立关系数据模型</span></div>
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">4</span><span class="text-sm" style="color: #8ba3c4;">参与开发根因分析和风险评估框架，设计关键度量、函数列和函数表（DAX）</span></div>
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">5</span><span class="text-sm" style="color: #8ba3c4;">独立开发交互式 Power BI 仪表板，集成多种图表、分解树、饼图/环形图、瀑布图、多级下钻和多维动态筛选</span></div>
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">6</span><span class="text-sm" style="color: #8ba3c4;">仪表板美化（SVG）</span></div>
+                <div class="flex items-start gap-2"><span class="w-5 h-5 rounded-full text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono" style="background: rgba(59,130,246,0.1); color: #3b82f6;">7</span><span class="text-sm" style="color: #8ba3c4;">负责仪表板部署和运维，实现自动化更新和告警机制，并通过权限管理（RLS）保障数据安全</span></div>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-2" style="color: rgba(232,237,245,0.9);">项目成果</h4>
+              <div class="space-y-2">
+                <div class="flex items-start gap-2 p-2 rounded-lg border" style="background: rgba(59,130,246,0.05); border-color: rgba(59,130,246,0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <span class="text-sm" style="color: rgba(232,237,245,0.8);">效率提升 — 减少人工月度数据处理和报表制作时间，实现每日数据更新</span>
+                </div>
+                <div class="flex items-start gap-2 p-2 rounded-lg border" style="background: rgba(59,130,246,0.05); border-color: rgba(59,130,246,0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <span class="text-sm" style="color: rgba(232,237,245,0.8);">风险管理 — 通过自动化告警和风险评估，实现问题 TN 的早期识别与管控</span>
+                </div>
+                <div class="flex items-start gap-2 p-2 rounded-lg border" style="background: rgba(59,130,246,0.05); border-color: rgba(59,130,246,0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <span class="text-sm" style="color: rgba(232,237,245,0.8);">决策支持 — 为管理层提供清晰、交互式的多维度仪表板</span>
+                </div>
+                <div class="flex items-start gap-2 p-2 rounded-lg border" style="background: rgba(59,130,246,0.05); border-color: rgba(59,130,246,0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <span class="text-sm" style="color: rgba(232,237,245,0.8);">数据准确性提升 — 通过数据标准化降低数据错误率</span>
+                </div>
+                <div class="flex items-start gap-2 p-2 rounded-lg border" style="background: rgba(59,130,246,0.05); border-color: rgba(59,130,246,0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <span class="text-sm" style="color: rgba(232,237,245,0.8);">Power BI 落地真实业务场景，实现 TN 数据实时监控</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Org & Volunteer -->
+      <div class="mt-10 grid md:grid-cols-2 gap-6 reveal">
+        <!-- Student Org -->
+        <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <h3 class="text-base font-bold flex items-center gap-2" style="color: #e8edf5;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+              学生组织经历
+            </h3>
+            <p class="text-sm mt-1" style="color: #8ba3c4;">院团委学生会外联部</p>
+          </div>
+          <div class="px-6">
+            <ul class="space-y-2 max-h-72 overflow-y-auto pr-1 custom-scrollbar">
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>运营学院官方微信公众号，撰写新闻稿，设计排版</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>担任学院年会总负责人，负责节目策划、舞台管理及技术工作</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>担任德勤企业参访总负责人，负责团队带队与企业联络</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>参与组织 2024 届学院招聘会，负责企业联络与场地管理</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>参与组织学院 15 周年庆典，负责场地布置与活动策划</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>负责学院"行业专家进校园"系列活动组织、活动宣传及后期内容创作</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Volunteer -->
+        <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0 pb-0">
+            <h3 class="text-base font-bold flex items-center gap-2" style="color: #e8edf5;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              志愿者经历
+            </h3>
+          </div>
+          <div class="px-6">
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>2024 ATP1000 上海劳力士网球大师赛 志愿者</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>余德耀美术馆 志愿讲解员</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>2023 中国银行上海大学生健步走比赛 志愿者</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>徐汇区紫薇幼儿园 诗歌进校园 志愿者</span></li>
+              <li class="flex items-start gap-2 text-sm" style="color: #8ba3c4;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="m9 18 6-6-6-6"/></svg><span>松江区方塔园 志愿者</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSDN Blog -->
+      <div class="mt-6 reveal">
+        <div class="card" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="px-6 pt-0">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold flex items-center gap-2" style="color: #e8edf5;">
+                  CSDN 博客
+                  <span class="badge text-xs" style="border-color: rgba(59,130,246,0.3); color: #60a5fa; background: rgba(59,130,246,0.05);">leo_yu_yty</span>
+                </h3>
+                <p class="text-sm mt-1 leading-relaxed" style="color: #8ba3c4;">
+                  定期分享学习心得，包括 Power BI 实战技巧（DAX 代码分享、SVG 在 Power BI 中的应用、自定义可视化方法）、MySQL DBA 学习笔记（性能优化底层逻辑、日志与线程功能）等。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-px max-w-5xl mx-auto" style="background: rgba(26,41,66,0.4);"></div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 pb-24">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-center gap-3 mb-10 md:mb-14 reveal">
+        <div class="flex items-center justify-center w-10 h-10 rounded-lg border" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight" style="color: #e8edf5;">联系方式</h2>
+        <div class="flex-1 h-px ml-4" style="background: linear-gradient(to right, rgba(59,130,246,0.3), transparent);"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+        <!-- Phone -->
+        <a href="tel:18621593507" class="block">
+          <div class="p-4 rounded-xl border transition-all duration-300 group cursor-pointer" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="text-xs" style="color: #8ba3c4;">电话</p>
+                <p class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">18621593507</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Email -->
+        <a href="mailto:1475063742@qq.com" class="block">
+          <div class="p-4 rounded-xl border transition-all duration-300 group cursor-pointer" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <p class="text-xs" style="color: #8ba3c4;">邮箱</p>
+                <p class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">1475063742@qq.com</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Location -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center transition-colors" style="background: rgba(59,130,246,0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="text-xs" style="color: #8ba3c4;">所在地</p>
+              <p class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">上海</p>
+            </div>
+          </div>
+        </div>
+        <!-- WeChat -->
+        <div class="p-4 rounded-xl border transition-all duration-300 group" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center transition-colors" style="background: rgba(59,130,246,0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs" style="color: #8ba3c4;">微信</p>
+              <p class="text-sm font-medium" style="color: rgba(232,237,245,0.9);">leoduo2005</p>
+            </div>
+          </div>
+        </div>
+        <!-- CSDN -->
+        <a href="https://blog.csdn.net/leo_yty?type=blog" target="_blank" rel="noopener noreferrer" class="block">
+          <div class="p-4 rounded-xl border transition-all duration-300 group cursor-pointer" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+              </div>
+              <div>
+                <p class="text-xs" style="color: #8ba3c4;">CSDN 博客</p>
+                <p class="text-sm font-medium flex items-center gap-1" style="color: rgba(232,237,245,0.9);">leo_yu_yty <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Website -->
+        <a href="https://yty-cv.com" target="_blank" rel="noopener noreferrer" class="block">
+          <div class="p-4 rounded-xl border transition-all duration-300 group cursor-pointer" style="background: rgba(15,29,50,0.6); border-color: rgba(26,41,66,0.5);">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center transition-colors" style="background: rgba(59,130,246,0.1);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <div>
+                <p class="text-xs" style="color: #8ba3c4;">网站</p>
+                <p class="text-sm font-medium flex items-center gap-1" style="color: rgba(232,237,245,0.9);">yty-cv.com <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto border-t" style="border-color: rgba(26,41,66,0.4); background: rgba(10,22,40,0.8);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs" style="color: #8ba3c4;">&copy; 2026 俞天跃</p>
+      <p class="text-xs" style="color: #8ba3c4;">使用 Next.js · Tailwind CSS · Framer Motion 构建</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full shadow-lg flex items-center justify-center transition-all" style="background: rgba(59,130,246,0.9); color: white; box-shadow: 0 10px 15px -3px rgba(59,130,246,0.25); display: none;" aria-label="回到顶部">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+</div>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenuBtn = document.getElementById('closeMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => { mobileMenu.classList.add('open'); });
+  closeMenuBtn.addEventListener('click', () => { mobileMenu.classList.remove('open'); });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => { mobileMenu.classList.remove('open'); });
+  });
+
+  // Back to top button
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.style.display = window.scrollY > 400 ? 'flex' : 'none';
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Scroll-triggered reveal animations
+  const revealElements = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  revealElements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
