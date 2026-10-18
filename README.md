@@ -1,4 +1,2 @@
 # yty-cv.github.io
-html index is the cv of yty
-the cv will be updated timely
-the only target of the cv is to search for a job
+html index is the cv of yty, and this cv will be updated timely, by the way, the only target of this cv is for me to search for a new job
